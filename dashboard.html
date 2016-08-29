@@ -1,0 +1,56 @@
+<!-- Main Menu Popup -->
+
+
+<!-- Top Navbar
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link logout">
+                <i class="icon icon-back"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+        <div class="center sliding">
+            <img src="img/colorized_logo.png" width="60px"/>
+        </div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>-->
+<!-- Status bar overlay for full screen mode (PhoneGap) -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <!--
+              Right link contains only icon - additional "icon-only" class
+              Additional "open-panel" class tells app to open panel when we click on this link
+            -->
+            <img src="img/colorized_logo.png" width="60px" data-popup=".popup-mainmenu"
+                 class="link open-popup"/>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-fixed">
+    <!-- Page, "data-page" contains page name -->
+    <div data-page="dashboard" class="page no-swipeback">
+        <!-- Scrollable page content -->
+        <div class="page-content">
+
+            <!-- Slider main container -->
+            <div class="categories_labels">
+            </div>
+
+            <div class="content-block">
+
+            </div>
+        </div>
+    </div>
+</div>

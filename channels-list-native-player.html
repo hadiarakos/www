@@ -1,0 +1,66 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <!--
+              Right link contains only icon - additional "icon-only" class
+              Additional "open-panel" class tells app to open panel when we click on this link
+            -->
+            <img src="img/colorized_logo.png" width="60px" data-popup=".popup-mainmenu"
+                 class="link open-popup"/>
+        </div>
+        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+        <div class="left">
+
+        </div>
+
+        <div class="right">
+            <a href="#"  class="link signOut">Signout</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="pages ">
+
+
+    <div data-page="channels-list-native-player" class="page">
+
+        <video id="channel_list_preview" controls="true"
+               playsinline class="channels_preview " autoplay="true" loop></video>
+
+
+        <!-- Search Bar -->
+        <form class="searchbar">
+            <div class="searchbar-input">
+                <input type="search" placeholder="Search">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+            <a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
+
+
+        <!-- Search Bar overlay-->
+        <div class="searchbar-overlay"></div>
+
+
+        <div class="page-content">
+
+
+            <!-- This block will be displayed if nothing found -->
+            <div class="content-block searchbar-not-found">
+                <div class="content-block-inner">Nothing found</div>
+            </div>
+
+
+            <div class="list-block list-block-search searchbar-found list-block-for-channel-list">
+
+                <ul class="native_player_ul"></ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>

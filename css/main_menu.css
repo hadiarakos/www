@@ -1,0 +1,91 @@
+.menu_header {
+    padding: 20px;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+
+}
+
+.done {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.mindtv-bg-gray {
+    color: #fff;
+    background-color: #D8D8DF;
+}
+
+.mindtv-list-block {
+    margin: 0 0;
+    font-size: 17px;
+}
+
+.page > .channels_preview {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    z-index: 200;
+}
+
+.channels_preview {
+    /* height: 300px; */
+    width: 100%;
+    background: #000;
+    box-sizing: border-box;
+    padding: 0 8px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* -webkit-box-align: center; */
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.list-block-for-channel-list ul {
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 100px 0 0 0;
+    /* position: relative; */
+    position: absolute;
+    width: 100%;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+    }
+
+    #bgvid {
+        display: none;
+    }
+
+}
+
+video#bgvid {
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
